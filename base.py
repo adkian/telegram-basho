@@ -52,16 +52,7 @@ def handle(msg):
         bot.sendMessage(msg['chat']['id'], message)
 
 def getGreeting(date):
-    greeting=""
-    hour=int(datetime.datetime.fromtimestamp(date).strftime("%H"))
-    if (hour>=0 and hour<=3) or (hour>=17 and hour<=23):
-        greeting="Konbanawa, "
-    elif hour>=4 and hour<=11:
-        greeting="Ohayo Gozaimasu, "
-    else:
-        greeting="Konichiwa, "
-    text="I'm a new-age version of the great Japanese poet, Basho. Type /help for commands"
-    return (greeting + text)
+    return "yo"
 
     
         
